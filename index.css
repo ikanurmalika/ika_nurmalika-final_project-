@@ -1,0 +1,10 @@
+body{
+    font-family: 'inter', 'sans-serif';
+}
+#home{
+    background-image: url("src/latar.png");
+    align-items: center;
+    width:100%;
+    flex-wrap: wrap;
+    height: 500px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ika_Nurmalika-final_project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body>
+    <section id="navigation">
+        <nav class="bg-teal-500 shadow-lg">
+			<div class="max-w-6xl mx-auto px-4">
+				<div class="flex justify-between">
+					<div class="flex space-x-7">
+						<div>
+							<!-- Website Logo -->
+							<a href="#" class="flex items-center py-4 px-2">
+								<span class="font-semibold text-white text-lg">Ika Nurmalika</span>
+							</a>
+						</div>
+						<!-- Primary Navbar items -->
+						<div class="hidden md:flex items-center space-x-1">
+							<a href="#home" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
+							<a href="#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
+							<a href="#education" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Education</a>
+                            <a href="#portofolio" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Portofolio</a>
+							<a href="#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact Us</a>
+						</div>
+					</div>
+					<!-- Secondary Navbar items -->
+					<div class="hidden md:flex items-center space-x-3 ">
+						<a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
+						<a href="" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+			<div class="hidden mobile-menu">
+				<ul class="">
+					<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+					<li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+					<li><a href="#education" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Education</a></li>
+                    <li><a href="#portofolio" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Portofolio</a></li>
+					<li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
+				</ul>
+			</div>
+			<script>
+				const btn = document.querySelector("button.mobile-menu-button");
+				const menu = document.querySelector(".mobile-menu");
+
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+				});
+			</script>
+		</nav>
+    </section>
+
+    <section id="home" class="pt-36">
+        <div class="container ">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold text-teal-500 md:text-xl l">Hallo Semua 👋, Saya 
+                        <span class="block font-bold text-slate-900 text-4xl mt-1 lg:text-5xl">Ika Nurmalika</span></h1>
+                    <h2 class="font-medium text-slate-500 text-lg mb-5 ">Web Develover</h2>
+                    <p class="font-medium leading-relaxed text-slate-500 mb-10">
+                        Saya adalah seorang <span class="text-black font-bold lg:text-2xl ">Web Developer</span>.
+                        Sekarang saya sedang mengikuti kegiatan Ruangguru Camp 2022 dalam program BackEnd Enginering</p>
+                    <a href="#" class="text-base font-semibold text-white bg-teal-500 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-60
+                    transition duration-300 ease-in-out">Hubungi Saya</a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relatif mt-10 lg:mt-9 lg:right-0">
+                        <img src="src/ika_nurmalika.png" alt="Ika Nurmalika" class="max-w-full mx-auto">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="about" class="pt-36 pb-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h1 class="font-bold uppercase text-teal-500 text-lg mb-3">Tentang Saya</h1>
+                    <p class="font-medium text-base text-slate-500 max-w-xl">Saya adalah Mahasiswa aktif semester 5 jurusan Teknik informatika di 
+                        Sekolah Tinggi Teknologi Bandung. Saya aktif mengikuti berbagai kegiatan kampus dan 
+                        diluar kampus seperti mengikuti organisasi. Saya memiliki minat yang tinggi terhadap 
+                        pemrograman dan IT.</p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h2 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari berteman</h2>
+                    <p class="font-medium text-base text-slate-500 mb-6 lg-text-lg">Ini adalah platform yang bisa anda pilih untuk berteman dengan saya</p>
+                    <div class="flex items-center">
+                        <a href="https://instagram.com/ika_nr22" 
+                        target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center 
+                        border border-slate-600 hover:border-teal-500 hover:bg-teal-500 hover:text-white ">
+                            <img src="src/instagram.png" width="20" viewBox="0 0 24 24" class="fill-current">
+                        </a>
+                        <a href="https://whatsapp.com/62895374173615" 
+                        target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center 
+                        border border-slate-600 hover:border-teal-500 hover:bg-teal-500 hover:text-white ">
+                            <img src="src/whatsapp.png" width="20" viewBox="0 0 24 24" class="fill-current">
+                        </a>
+                        <a href="https://linkedin.com/ikanurmalika" 
+                        target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center 
+                        border border-slate-600 hover:border-teal-500 hover:bg-teal-500 hover:text-white ">
+                            <img src="src/linkedin.png" width="20" viewBox="0 0 24 24" class="fill-current">
+                        </a>
+                        <a href="https://github.com/ikanurmalika" 
+                        target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center 
+                        border border-slate-600 hover:border-teal-500 hover:bg-teal-500 hover:text-white ">
+                            <img src="src/github.png" width="20" viewBox="0 0 24 24" class="fill-current">
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
